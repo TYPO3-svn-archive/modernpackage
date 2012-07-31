@@ -13,10 +13,10 @@
 
 plugin.tx_news {
 	view {
-		templateRootPath = EXT:modernpackage/Resources/Private/Templates/Extensions/news/Templates/
-		partialRootPath = EXT:modernpackage/Resources/Private/Templates/Extensions/news/Partials/
-		layoutRootPath = EXT:modernpackage/Resources/Private/Templates/Extensions/news/Layouts/
-        widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = EXT:modernpackage/Resources/Private/Templates/Extensions/news/
+		templateRootPath = EXT:modernpackage/Resources/Private/Extensions/news/Templates/
+		partialRootPath = EXT:modernpackage/Resources/Private/Extensions/news/Partials/
+		layoutRootPath = EXT:modernpackage/Resources/Private/Extensions/news/Layouts/
+        widget.Tx_News_ViewHelpers_Widget_PaginateViewHelper.templateRootPath = EXT:modernpackage/Resources/Private/Extensions/news/
 	}
 
 	settings.list.paginate.insertAbove = 0
@@ -41,10 +41,10 @@ lib.extensions.news_latest {
 	settings < plugin.tx_news.settings
 	settings {
 		hidePagination = 1
-		cropMaxCharacters = {$plugin.modernpackage.extensions.news.latest.cropMaxCharacters}
-		detailPid = {$plugin.modernpackage.extensions.news.latest.detailPid}
-		limit = {$plugin.modernpackage.extensions.news.latest.limit}
-		startingpoint = {$plugin.modernpackage.extensions.news.latest.startingpoint}
+		cropMaxCharacters = {$plugin.theme_configuration.extensions.news.latest.cropMaxCharacters}
+		detailPid = {$plugin.theme_configuration.extensions.news.latest.detailPid}
+		limit = {$plugin.theme_configuration.extensions.news.latest.limit}
+		startingpoint = {$plugin.theme_configuration.extensions.news.latest.startingpoint}
 
 		isLatest = 1
 	}

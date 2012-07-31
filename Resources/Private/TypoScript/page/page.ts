@@ -24,12 +24,12 @@ page {
 			key.override.field = backend_layout
 
 			default = TEXT
-			default.value = typo3conf/ext/modernpackage/Resources/Private/Templates/Page/modern_3col.html
+			default.value = EXT:modernpackage/Resources/Private/Templates/Page/modern_3col.html
 			2 = TEXT
-			2.value = typo3conf/ext/modernpackage/Resources/Private/Templates/Page/modern_2col.html
+			2.value = EXT:modernpackage/Resources/Private/Templates/Page/modern_2col.html
 		}
-		#partialRootPath = fileadmin/templates_fluid/partials/
-		layoutRootPath = typo3conf/ext/modernpackage/Resources/Private/Templates/Page/Layouts/
+		#partialRootPath = EXT:modernpackage/Resources/Private/Templates/Page/
+		layoutRootPath = EXT:modernpackage/Resources/Private/Templates/Page/Layouts/
 		variables {
 
 		}

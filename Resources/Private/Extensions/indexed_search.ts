@@ -24,7 +24,7 @@ lib.extensions.indexed_search_box {
 	10 {
 		wrap = <form class="pull-left searchform-short" action="|" method="post">
 		typolink {
-			parameter = {$plugin.modernpackage.extensions.indexed_search.form-target}
+			parameter = {$plugin.theme_configuration.extensions.indexed_search.form-target}
 			returnLast = url
 		}
 	}

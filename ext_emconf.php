@@ -42,7 +42,6 @@ $EM_CONF[$_EXTKEY] = array(
 		'conflicts' => array(
 		),
 		'suggests' => array(
-			'indexed_search' => '0.0.1-',
 			'news' => '1.3.0-',
 		),
 	),

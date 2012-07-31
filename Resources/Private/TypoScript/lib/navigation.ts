@@ -19,14 +19,14 @@
 #-------------------------------------------------------------------------------
 #	NAVIGATION: Service navigation TOP
 #-------------------------------------------------------------------------------
-lib.navigation_service-top = COA
-lib.navigation_service-top {
+lib.navigation.service-top = COA
+lib.navigation.service-top {
 	stdWrap.wrap = <ul class="nav nav-service">|</ul>
 
 	10 = HMENU
 	10 {
 		special = directory
-		special.value = {$plugin.modernpackage.navigation_service}
+		special.value = {$plugin.theme_configuration.navigation_service}
 
 		1 = TMENU
 		1 {
@@ -41,12 +41,12 @@ lib.navigation_service-top {
 	}
 }
 
-lib.navigation_service-top-right = COA
-lib.navigation_service-top-right {
+lib.navigation.service-top-right = COA
+lib.navigation.service-top-right {
 	10 = HMENU
 	10 {
 		special = directory
-		special.value = {$plugin.modernpackage.navigation_service-right}
+		special.value = {$plugin.theme_configuration.navigation_service-right}
 
 		1 = TMENU
 		1 {
@@ -65,8 +65,8 @@ lib.navigation_service-top-right {
 #-------------------------------------------------------------------------------
 #	NAVIGATION: Breadcrumb
 #-------------------------------------------------------------------------------
-lib.navigation_breadcrumb = COA
-lib.navigation_breadcrumb {
+lib.navigation.breadcrumb = COA
+lib.navigation.breadcrumb {
 	stdWrap.wrap = <ul class="breadcrumb">|</ul>
 
 	10 = HMENU
@@ -118,8 +118,8 @@ lib.navigation_breadcrumb {
 #-------------------------------------------------------------------------------
 #	NAVIGATION: Sidebar
 #-------------------------------------------------------------------------------
-lib.navigation_sidebar = COA
-lib.navigation_sidebar {
+lib.navigation.sidebar = COA
+lib.navigation.sidebar {
 	stdWrap.wrap = <ul class="nav-sidebar">|</ul>
 
 	10 = HMENU
@@ -163,8 +163,8 @@ lib.navigation_sidebar {
 #-------------------------------------------------------------------------------
 #	NAVIGATION: Language menu
 #-------------------------------------------------------------------------------
-lib.navigation_languageswitch = COA
-lib.navigation_languageswitch {
+lib.navigation.languageswitch = COA
+lib.navigation.languageswitch {
 	# Item to open language menu
 	5 = TEXT
 	5 {
@@ -176,7 +176,7 @@ lib.navigation_languageswitch {
 	10 = HMENU
 	10 {
 		special = language
-		special.value = {$plugin.modernpackage.navigation_languageswitch.languages}
+		special.value = {$plugin.theme_configuration.navigation_languageswitch.languages}
 
 		wrap = <ul class="dropdown-menu">|</ul>
 
@@ -188,7 +188,7 @@ lib.navigation_languageswitch {
 			NO {
 				wrapItemAndSub = <li>|</li>
 				stdWrap.cObject = TEXT
-				stdWrap.cObject.value = {$plugin.modernpackage.navigation_languageswitch.labels}
+				stdWrap.cObject.value = {$plugin.theme_configuration.navigation_languageswitch.labels}
 			}
 			ACT <.NO
 			ACT {
@@ -202,15 +202,15 @@ lib.navigation_languageswitch {
 #-------------------------------------------------------------------------------
 #	NAVIGATION: Footer (left)
 #-------------------------------------------------------------------------------
-lib.navigation_footer-left = COA
-lib.navigation_footer-left {
+lib.navigation.footer-left = COA
+lib.navigation.footer-left {
 	stdWrap.wrap = <ul>|</ul>
 
 	10 = HMENU
 	10 {
 
 		special = list
-		special.value = {$plugin.modernpackage.navigation.footer-left}
+		special.value = {$plugin.theme_configuration.navigation.footer-left}
 
 		1 = TMENU
 		1 {
@@ -240,15 +240,15 @@ lib.navigation_footer-left {
 #-------------------------------------------------------------------------------
 #	NAVIGATION: Footer (right)
 #-------------------------------------------------------------------------------
-lib.navigation_footer-right = COA
-lib.navigation_footer-right {
+lib.navigation.footer-right = COA
+lib.navigation.footer-right {
 	stdWrap.wrap = <ul>|</ul>
 
 	10 = HMENU
 	10 {
 
 		special = list
-		special.value = {$plugin.modernpackage.navigation.footer-right}
+		special.value = {$plugin.theme_configuration.navigation.footer-right}
 
 		1 = TMENU
 		1 {

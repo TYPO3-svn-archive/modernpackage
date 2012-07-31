@@ -2,7 +2,7 @@
 
 /* Background */
 body#typo3-index-php {
-	background: #FF6501 url(../img/background.jpg) no-repeat 0 0;
+	background: #017a95 url(../img/background.png) no-repeat top left;
 }
 
 /* Hide some not necessary things */
@@ -15,10 +15,11 @@ table#logintable p.c-info {
 /* main frame */
 body#typo3-index-php #t3-login-form {
 	margin: 0;
-	padding: 0;
+	padding: 25px 40px 35px 250px;
 	position: absolute;
-	top: 325px;
-	left: 280px;
+	top: 250px;
+	left: 0;
+	background: rgba(1, 51, 60, 0.8);
 }
 
 /* inner frame holding the background image */
@@ -61,7 +62,7 @@ body#typo3-index-php .t3-headline {
 
 body#typo3-index-php .t3-headline h2 {
 	background: none;
-	color: #000;
+	color: #fff;
 	font-size: 27px !important;
 	font-family: 'Share-BoldRegular', Helvetica, sans-serif;
 	font-weight: normal;
@@ -74,7 +75,7 @@ body#typo3-index-php .t3-headline h2 {
 
 body#typo3-index-php #t3-login-process h2 {
 	margin: 0;
-	color: #4a1f03;
+	color: #fff;
 	font-style: italic;
 	font-weight: normal;
 	background-image: url(../img/ajax-loader.gif);
@@ -85,14 +86,14 @@ body#typo3-index-php .t3-login-field {
 }
 
 body#typo3-index-php .t3-login-field label {
-	color: #000;
+	color: #fff;
 	font-family: 'Share-Regular', Helvetica, sans-serif;
 	text-align: right;
 	margin-top: 2px;
 }
 
 body#typo3-index-php .t3-login-field input {
-	background: #eee;
+	background-color: #ccc;
 	height: 16px;
 	font-size: 10px;
 }
@@ -114,11 +115,23 @@ body#typo3-index-php .t3-login-field .t3-login-clearInputField img {
 }
 
 body#typo3-index-php #t3-footer {
-	width: 580px;
-	margin: 0 150px 0;
-	border: 0;
-	top: 470px;
-	position: absolute;
+	/*width: 580px;*/
+	/*margin: 0 150px 0;*/
+	/*border: 0;*/
+	/*top: 470px;*/
+	/*position: absolute;*/
+	border-color: #01333c;
+	background: rgba(1, 51, 60, 0.8);
+	margin: -50px 0 0 0;
+	padding: 0 10px;
+	height: 38px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+body#typo3-index-php div#t3-copyright-notice {
+	margin-top: 4px;
 }
 
 body#typo3-index-php .t3-login-form-footer {
@@ -132,27 +145,26 @@ body#typo3-index-php .t3-login-form-footer {
 
 body#typo3-index-php .t3-login-form-footer a.switchToOpenId {
 	text-decoration: none;
-	color: #4a1f03;
+	color: #fff;
 }
 
 body#typo3-index-php div#t3-copyright-notice {
-	color: #4a1f03;
+	color: #eee;
 }
 
-body#typo3-index-php div#t3-copyright-notice a {
-	color: #4a1f03;
+body#typo3-index-php div#t3-copyright-notice a, body#typo3-index-php div#t3-copyright-notice a:hover {
+	color: #ccc;
 	text-decoration: none;
 }
 
 body#typo3-index-php .t3-login-form-footer a.switchToOpenId:hover,
-body#typo3-index-php div#t3-copyright-notice a:hover,
 body#typo3-index-php #t3-meta-links a:hover {
-	color: #4a1f03;
+	color: red;
 	text-decoration: underline;
 }
 
 body#typo3-index-php #t3-meta-links a {
-	color: #4a1f03;
+	color: #ffff;
 }
 
 #t3-meta-links {
@@ -163,9 +175,9 @@ body#typo3-index-php #t3-meta-links a {
 	display: none;
 }
 
+/* Login Error */
 .t3-login-alert-error {
 	opacity: 0.9;
 	position: absolute;
 	top: -105px;
-	left: 30px;
 }

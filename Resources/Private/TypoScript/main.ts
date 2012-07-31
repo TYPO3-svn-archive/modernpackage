@@ -10,6 +10,7 @@
 # **********************************************************
 # Basis of everything
 # **********************************************************
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/Extensions/_main.ts">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TypoScript/content/_main.ts">
 
@@ -21,3 +22,4 @@
 
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:modernpackage/Resources/Private/TypoScript/page/debug.ts">
+

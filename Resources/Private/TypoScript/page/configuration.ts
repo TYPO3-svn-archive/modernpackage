@@ -15,7 +15,7 @@ page {
 	meta.viewport = width=100%, minimum-scale=1.0, maximum-scale=1.0
 	#Favicon
 	headerData.4 = TEXT
-	headerData.4.value = <link rel="shortcut icon" href="{$plugin.modernpackage.url}typo3conf/ext/modernpackage/Resources/Public/favicon.ico" />
+	headerData.4.value = <link rel="shortcut icon" href="{$plugin.theme_configuration.url}typo3conf/ext/modernpackage/Resources/Public/favicon.ico" />
 }
 
 config {
@@ -35,8 +35,8 @@ config {
 
 	# RealURL
 	simulateStaticDocuments = 0
-	baseURL = {$plugin.modernpackage.url}
-	absRefPrefix = {$plugin.modernpackage.url}
+	baseURL = {$plugin.theme_configuration.url}
+	absRefPrefix = {$plugin.theme_configuration.url}
 	tx_realurl_enable = 0
 	prefixLocalAnchors = all
 	prefixLocalAnchors >

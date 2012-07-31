@@ -13,7 +13,7 @@
 			<li>
 				<f:form.checkbox id="category-{category.item.uid}"property="selectedCategories" value="{category.item.uid}" />
 				<label for="category-{category.item.uid}" title="{category.item.uid}">{category.item.title}</label>
-				
+
 				<f:if condition="{category.children}">
 					<f:render section="categoryTree" arguments="{categories: category.children}" />
 				</f:if>
@@ -111,17 +111,17 @@
 						<td>
 							<span><f:translate key="LLL:EXT:news/Resources/Private/Language/locallang_db.xml:tx_news_domain_model_news.istopnews" /></span>
 							<n:be.buttons.icon uri="#" onclick="{n:be.multiEditLink(items:news,column:'istopnews')}" icon="actions-document-open" />
-						</t>
-						<th class="date">
+						</td>
+						<td class="date">
 							<span><f:translate key="LLL:EXT:news/Resources/Private/Language/locallang_db.xml:tx_news_domain_model_news.datetime" /></span>
 							<n:be.buttons.icon uri="#" onclick="{n:be.multiEditLink(items:news,column:'datetime')}" icon="actions-document-open" />
 						</td>
-						<th class="date">
+						<td class="date">
 							<span><f:translate key="LLL:EXT:news/Resources/Private/Language/locallang_db.xml:tx_news_domain_model_news.archive" /></span>
 							<n:be.buttons.icon uri="#" onclick="{n:be.multiEditLink(items:news,column:'archive')}" icon="actions-document-open" />
 						</td>
 						<td><f:translate key="LLL:EXT:news/Resources/Private/Language/locallang_be.xml:flexforms_general.orderBy.tstamp" /></td>
-						<th class="nosort"></td>
+						<td class="nosort"></td>
 					</tr></thead>
 					<tbody>
 						<f:for each="{news}" as="newsItem">

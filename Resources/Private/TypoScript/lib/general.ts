@@ -26,7 +26,7 @@ lib.copyright_information {
 		strftime = %Y
 		noTrimWrap = || {LLL:EXT:modernpackage/Resources/Private/Language/locallang.xml:copyright}|
 		noTrimWrap.insertData = 1
-		typolink.parameter = {$plugin.modernpackage.general.copyright_information.link}
+		typolink.parameter = {$plugin.theme_configuration.general.copyright_information.link}
 	}
 }
 
